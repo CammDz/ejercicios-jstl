@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ejercicios-jstl
+    runtime: docker
+    plan: free
+    # Render construye con el Dockerfile de la raiz del repo
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      # Driver Postgres para Supabase. No cambiar salvo que vuelvas a MySQL.
+      - key: DB_DRIVER
+        value: org.postgresql.Driver
+      # URL JDBC de Supabase (pooler o directa). Ejemplo:
+      # jdbc:postgresql://db.xxxxx.supabase.co:5432/postgres?sslmode=require
+      # Si usas pooler (recomendado en Render free): puerto 6543
+      - key: DB_URL
+        sync: false
+      - key: DB_USER
+        value: postgres
+      - key: DB_PASSWORD
+        sync: false

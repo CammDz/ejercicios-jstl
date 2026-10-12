@@ -1,0 +1,12 @@
+# No commitear credenciales locales ni temporales
+# WEB-INF/jspf/conexion.jspf se conserva con valores locales (localhost),
+# en Render se regenera desde las env vars DB_URL/DB_USER/DB_PASSWORD.
+
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.class
+target/

@@ -1,0 +1,8 @@
+﻿<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejercicios JSTL</title><link rel="stylesheet" href="${pageContext.request.contextPath}/Css/estilo.css?v=3"></head>
+<body><header class="cabecera"><div class="cabecera-interior">
+<a class="marca" href="${pageContext.request.contextPath}/index.jsp"><span class="logo">&lt;/&gt;</span>Práctica <strong>JSTL</strong></a>
+<a class="enlace-menu" href="${pageContext.request.contextPath}/index.jsp">←&nbsp;Menú principal</a>
+</div></header>
+<main class="contenido">
