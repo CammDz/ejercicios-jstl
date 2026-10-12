@@ -18,10 +18,7 @@
 <p style="color:red"><b>FALLO:</b></p>
 <ul>
 <li>message: <c:out value="${errorSQL.message}" /></li>
-<li>cause: <c:out value="${errorSQL.cause}" /></li>
-<li>rootCause: <c:out value="${errorSQL.rootCause}" /></li>
-<li>SQLState: <c:out value="${errorSQL.SQLState}" /></li>
-<li>errorCode: <c:out value="${errorSQL.errorCode}" /></li>
+<li>cause-message: <c:out value="${errorSQL.cause.message}" /></li>
 <li>full: <c:out value="${errorSQL}" /></li>
 </ul>
 <p>Si dice <i>password authentication failed</i>: revisa DB_USER/DB_PASSWORD.<br>
