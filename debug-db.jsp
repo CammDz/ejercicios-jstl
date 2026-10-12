@@ -17,7 +17,6 @@
 <c:when test="${not empty errorSQL}">
 <p style="color:red"><b>FALLO:</b></p>
 <ul>
-<li>class: <c:out value="${errorSQL.class.name}" /></li>
 <li>message: <c:out value="${errorSQL.message}" /></li>
 <li>cause: <c:out value="${errorSQL.cause}" /></li>
 <li>rootCause: <c:out value="${errorSQL.rootCause}" /></li>
